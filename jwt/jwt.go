@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"strings"
 	"time"
-	"twiggg/packages/jwt"
+	"twiggg/jwt"
 )
 
 // ------------------------------- JSON WEB TOKENS ------------------------------------------
