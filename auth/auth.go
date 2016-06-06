@@ -25,8 +25,8 @@ func Basic(next http.Handler) http.Handler {
 		h, min, _ := time.Now().Clock()
 		portion := y + int(m) + d + h + int(min/15)
 
-		valid.user = "twigggLaahs"
-		valid.pass = strings.Join([]string{"1K9l8985", strconv.Itoa(portion)}, "")
+		valid.user = "admin"
+		valid.pass = strings.Join([]string{"password", strconv.Itoa(portion)}, "")
 
 		if !(username == valid.user && password == valid.pass) {
 			http.Error(w, "Wrong credentials provided... Unauthorized", http.StatusUnauthorized)
